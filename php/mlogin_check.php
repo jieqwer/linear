@@ -1,4 +1,4 @@
-
+ï»¿
 <meta charset="utf-8">
 <?php
 date_default_timezone_set('prc');
@@ -14,7 +14,7 @@ setcookie("password",$password,time()+7*24*3600);
 
 
 if(empty($_POST["text"])){
-    echo '<script type="text/javascript">alert("ÄãÃ»ÓĞÊäÈëÑéÖ¤Âë£¬ÇëÊäÈë");</script>';
+    echo '<script type="text/javascript">alert("ä½ æ²¡æœ‰è¾“å…¥éªŒè¯ç ï¼Œè¯·è¾“å…¥");</script>';
     header('refresh:0;url=mlogin.php');
     die();
 }else{
@@ -23,7 +23,7 @@ if(empty($_POST["text"])){
 
 
 if(!(strtolower($text)==strtolower($_SESSION['code']))){
-    echo '<script type="text/javascript">alert("ÑéÖ¤Âë´íÎó£¬ÇëÖØĞÂÊäÈë");</script>';
+    echo '<script type="text/javascript">alert("éªŒè¯ç é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥");</script>';
     header('refresh:0;url=mlogin.php');
     exit();
 }
@@ -31,7 +31,7 @@ if(!(strtolower($text)==strtolower($_SESSION['code']))){
 else{}
 
 if(empty($_POST['username'])){
-    echo '<script type="text/javascript">alert("ÄãÃ»ÓĞÊäÈëÓÃ»§Ãû£¬ÇëÊäÈë");</script>';
+    echo '<script type="text/javascript">alert("ä½ æ²¡æœ‰è¾“å…¥ç”¨æˆ·åï¼Œè¯·è¾“å…¥");</script>';
     header('refresh:0;url=mlogin.php');
     die();
 }else{
@@ -40,20 +40,20 @@ if(empty($_POST['username'])){
 
 
 if(empty($_POST['password'])){
-    echo '<script type="text/javascript">alert("ÄãÃ»ÓĞÊäÈëÃÜÂë£¬ÇëÊäÈë");</script>';
+    echo '<script type="text/javascript">alert("ä½ æ²¡æœ‰è¾“å…¥å¯†ç ï¼Œè¯·è¾“å…¥");</script>';
     header('refresh:0;url=mlogin.php');
     die();
 }else{
     $password=md5($_POST['password']);
 }
-//µÇÂ¼³É¹¦
+//ç™»å½•æˆåŠŸ
 include_once('../function/function.php');
 opensql('localhost','root','woainirr@1314.++','db_lzy');
 $sql='select * from tb_admin where ad_name="'.$username.'" and ad_password="'.$password.'" and ad_mode=1';
 $result=mysql_query($sql);
 list($name,$password,$id,$time,$mode,$role)=mysql_fetch_array($result);
 $r=mysql_num_rows($result);
-//µÇÂ¼Ê§°Ü
+//ç™»å½•å¤±è´¥
 include_once('../function/function.php');
 opensql('localhost','root','woainirr@1314.++','db_lzy');
 $sql='select * from tb_admin where ad_name="'.$username.'" ';
@@ -65,7 +65,7 @@ if($r>0){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>¼ÓÔØÖĞ...</title>
+    <title>åŠ è½½ä¸­...</title>
     <style type="text/css">
         body {
             margin:0;
@@ -185,19 +185,19 @@ if($r>0){
 </head>
 <body>
 <div class="cube" tabindex="0">
-    <div class="cube__front">µÇÂ¼³É¹¦</div>
-    <div class="cube__back">µÇÂ¼³É¹¦</div>
-    <div class="cube__left">µÇÂ¼³É¹¦</div>
-    <div class="cube__right">µÇÂ¼³É¹¦</div>
-    <div class="cube__top">µÇÂ¼³É¹¦</div>
-    <div class="cube__bottom">µÇÂ¼³É¹¦</div>
+    <div class="cube__front">ç™»å½•æˆåŠŸ</div>
+    <div class="cube__back">ç™»å½•æˆåŠŸ</div>
+    <div class="cube__left">ç™»å½•æˆåŠŸ</div>
+    <div class="cube__right">ç™»å½•æˆåŠŸ</div>
+    <div class="cube__top">ç™»å½•æˆåŠŸ</div>
+    <div class="cube__bottom">ç™»å½•æˆåŠŸ</div>
 </div>
 </body>
 </html>';
     $da=date('Y-m-d H:i:s');
     include_once('../function/function.php');
     opensql('localhost','root','woainirr@1314.++','db_lzy');
-    $sql1="insert into tb_log(lo_add,lo_user,lo_message,lo_time) values('$role','$username','µÇÂ¼³É¹¦','$da')";
+    $sql1="insert into tb_log(lo_add,lo_user,lo_message,lo_time) values('$role','$username','ç™»å½•æˆåŠŸ','$da')";
     mysql_query($sql1);
     $_SESSION['username']=$username;
     header("refresh:2;url=batch.php");
@@ -205,9 +205,9 @@ if($r>0){
     $da1=date('Y-m-d H:i:s');
     include_once('../function/function.php');
     opensql('localhost','root','woainirr@1314.++','db_lzy');
-    $sql2="insert into tb_log(lo_add,lo_user,lo_message,lo_time) values('$role1','$username','µÇÂ¼Ê§°Ü','$da1')";
+    $sql2="insert into tb_log(lo_add,lo_user,lo_message,lo_time) values('$role1','$username','ç™»å½•å¤±è´¥','$da1')";
     mysql_query($sql2);
-   echo '<script type="text/javascript">alert("ÄúÊäÈëÓÃ»§Ãû¿ÉÄÜ±»½ûÓÃ»òÕßÄúµÄÓÃ»§ÃûºÍÃÜÂëÓĞ´í£¬ÇëÖØĞÂÊäÈë");</script>';
+   echo '<script type="text/javascript">alert("æ‚¨è¾“å…¥ç”¨æˆ·åå¯èƒ½è¢«ç¦ç”¨æˆ–è€…æ‚¨çš„ç”¨æˆ·åå’Œå¯†ç æœ‰é”™ï¼Œè¯·é‡æ–°è¾“å…¥");</script>';
    header('refresh:0;url=mlogin.php');
 }
 
