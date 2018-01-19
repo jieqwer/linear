@@ -1,4 +1,4 @@
-
+﻿
 <meta charset="utf-8">
 <?php
 
@@ -48,7 +48,7 @@ if(empty($_POST['password'])){
 }
 
 include_once('../function/function.php');
-opensql('localhost','root','123456','db_lzy');
+opensql('localhost','root','woainirr@1314.++','db_lzy');
 $sql='select * from tb_message where me_number="'.$username.'" and password="'.$password.'"';
 $result=mysql_query($sql);
 $r=mysql_num_rows($result);
