@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-sizing:border-box;
+}
+li{
+    list-style: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+.top{
+    width: 100%;
+    min-height: 10%;
+    background: #08f;
+    text-align: center;
+}
+.top div{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 15px;
+}
+.top a{
+    font-size: 16px;
+    color: white;
+}
+
+.center{
+    width: 70%;
+    min-height:400px;
+    margin:120px auto;
+}
+.centerleft{
+    width: 25%;
+    min-height: 100%;
+    margin: 0 auto;
+    float: left;
+}
+.centerc {
+    width: 35%;
+    min-height: 100%;
+    margin: 30px auto;
+    float: left;
+}
+.centerright{
+    width: 35%;
+    min-height: 100%;
+    margin: 40px auto;
+    float: left;
+}
+.centerleft select{
+    width: 90%;
+    height: 24px;
+    margin: 5px auto;
+}
+.bao ul li{
+    color:#fc4222;
+    font-size: 16px;
+}
+.centerleft p{
+    font-size: 18px;
+    display: block;
+    margin: 5px auto;
+    font-weight: 600;
+}
+.tishi>span:nth-of-type(2n+1){
+    font-size: 12px;
+}
+.tishi>span:nth-of-type(2n){
+    font-size: 12px;
+}
+.centerc>span{
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    float: left;
+    font-size: 16px;
+    margin-left: 80px;
+}
+.centerc>a{ 
+    border-radius: 8px;
+    background: #13ddf4;
+    color: white;
+    width: 50%;
+    height: 40px;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    transition: all 0.5s linear;
+    animation: 2s move infinite;
+    cursor:pointer;
+
+
+}
+@keyframes move {
+    20%{color: aqua;}
+    40%{color: black;}
+    60%{color: red;}
+    80%{color: moccasin;}
+    100%{color: green;}
+}
+.centerc>a:hover{
+    border-radius: 8px;
+    background: #fc4222;
+    color: white;
+    width: 50%;
+    height: 40px;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+.centerc>img{
+    width: 25%;
+    height: 90px;
+    transform: rotate(90deg);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 230px;
+}
+.centerright>img{
+    width:60%;
+    margin-left: 90px;
+
+}
+.erwei{
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+    background:#dfdede;
+    margin-left: 90px;
+}
+.erwei img{
+    width:20%;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 0px;
+}
+.erwei div{
+    float: left;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+
+}
+.erwei div p:nth-of-type(2n){
+    font-size: 12px;
+    width: 100%;
+    height: 20px;
+    color: #959292;
+}.erwei div p:nth-of-type(2n+1){
+     font-size: 12px;
+
+ }
+.footer{
+    width: 100%;
+    height: 150px;
+    background: #cccccc;
+    margin-top: 200px;
+}
+.footer div{
+    width: 70%;
+    border-bottom: 1px dashed #959292;
+    margin: 25px auto;
+    height: 40px;}
+.footer  div span{
+    display: block;
+    width: 3%;
+    height: 55px;
+    background: url("../img/1.png")no-repeat;
+    transform: rotate(90deg);
+    text-align: center;
+    margin: 0px auto;
+
+}
+.footer p{
+    width: 100%;
+    height: 20px;
+    color: #959292;
+    text-align: center;
+    margin-top: 15px;
+}
+.footer p a{
+    color: black;
+    transition: all 0.5s linear;
+}
+.footer p a:hover{
+    color: #fc4222;
+}
+@media(max-width:800px){
+*{
+    margin: 0;
+    padding: 0;
+    border-sizing:border-box;
+}
+    .top{
+        width: 100%;
+        min-height: 10%;
+        background: #08f;
+        text-align: center;
+    }
+    .top div{
+        font-size: 20px;
+        color: white;
+    }
+    .top a{
+        font-size: 12px;
+        color: white;
+    }
+    .center{
+        width: 100%;
+        min-height:300px;
+        margin:50px auto;
+    }
+    .centerleft{
+        width: 100%;
+        min-height: 100%;
+        margin: 0 auto;
+        float: left;
+    }
+    .centerc {
+        width: 100%;
+        min-height: 100%;
+        margin: 30px auto;
+        float: left;
+
+    }
+    .centerright{
+        width: 100%;
+        min-height: 100%;
+        margin: 10px auto;
+        float: left;
+    }
+    .centerleft select{
+        width: 90%;
+        height: 24px;
+        margin: 5px auto;
+    }
+    .bao ul li{
+        color:#fc4222;
+        font-size: 14px;
+    }
+    .centerleft p{
+        font-size: 16px;
+        display: block;
+        margin: 5px auto;
+        font-weight: 600;
+    }
+    .tishi>span:nth-of-type(2n+1){
+        font-size: 10px;
+    }
+    .tishi>span:nth-of-type(2n){
+        font-size: 10px;
+    }
+    .centerc>span{
+        width: 30%;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        float: left;
+        font-size: 12px;
+        margin-left: 24px;
+    }
+    .centerc>a{
+        border-radius: 8px;
+        background: #13ddf4;
+        color: white;
+        width: 50%;
+        height: 30px;
+        display: block;
+        float: left;
+        text-align: center;
+        line-height: 30px;
+        font-size: 16px;
+        animation: 2s move infinite;
+
+    }
+    @keyframes move {
+        20%{color: aqua;}
+        40%{color: black;}
+        60%{color: red;}
+        80%{color: moccasin;}
+        100%{color: green;}
+    }
+
+    .centerc>img{
+        width: 20%;
+        height: 90px;
+        transform: rotate(90deg);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 190px;
+    }
+
+    .centerright img{
+        width: 60%;
+        margin-left: 80px;
+    }
+    .erwei{
+        width: 60%;
+        height: 40px;
+        margin: 0 auto;
+        background:#dfdede;
+        margin-left:80px;
+    }
+    .erwei img{
+        width:20%;
+        height: 40px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 0px;
+    }
+    .erwei div{
+        float: left;
+        width: 80%;
+        height: 40px;
+        text-align: center;
+        font-size: 10px;
+
+
+    }
+    .erwei div p:nth-of-type(2n){
+        font-size: 9px;
+        width: 100%;
+        height: 20px;
+        color: #959292;
+    }
+    .footer{
+        width: 100%;
+        height: 130px;
+        background: #cccccc;
+        margin-top: 530px;
+    }
+    .footer div{
+        width: 70%;
+        border-bottom: 1px dashed #959292;
+        margin: 25px auto;
+        height: 40px;}
+    .footer  div span{
+        display: block;
+        width: 5%;
+        height: 40px;
+        background: url("../img/1.png")no-repeat;
+        transform: rotate(90deg);
+        text-align: center;
+        margin: 0px auto;
+
+    }
+    .footer p{
+        width: 100%;
+        height: 20px;
+        color: #959292;
+        text-align: center;
+        font-size: 10px;
+    }
+    .footer p a{
+        color: black;
+    }
+}

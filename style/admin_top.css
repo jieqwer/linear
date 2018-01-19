@@ -1,0 +1,219 @@
+* {
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topleft{
+    width: 100%;
+    height: 60px;
+    background: #333;
+    line-height: 60px;
+}
+.topleft1{
+    float: left;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 15px;
+
+}
+.topleft1 h2{
+    float: left;
+
+}
+.topleft1 h2 a{
+    color: white;
+
+}
+.topleft1 div{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 116px;
+
+}
+.topleft1 div:hover{
+    background: rgba(255,255,255,.5);
+    transition: all 0.5s linear;
+
+}
+.topleft1 div:hover+span{
+    cursor: pointer;
+    display: block;
+
+
+}
+
+.topleft1 div span{
+    display: block;
+    background: url("../img/jia.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin:20px 12px;
+
+
+}.topleft1 div i{
+     display: block;
+     background: url("../img/xiala.png") no-repeat;
+     width: 20px;
+     height: 20px;
+     float: left;
+     margin:20px 0px;
+ }
+.topleft1 div a{
+    display: block;
+    width: 50px;
+    height: 60px;
+    float: left;
+    font-size: 17px;
+    color: white;
+
+}
+.topleft1 div+span{
+    display:none;
+    position: absolute;
+    top:60px;
+    left:169px;
+    color: #333;
+    width: 116px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0 0 4px 4px;
+    border: 1px;
+    transition: all .5s linear;
+    font-size: 17px;
+    box-shadow: rgba(0,0,0,0.1) 0px 0px 8px ;
+
+}
+.topleft1 div+span:hover{
+    display: block;
+    position: absolute;
+    top:60px;
+    left:169px;
+    width: 116px;
+    height: 60px;
+    line-height: 60px;
+    background: rgba(255,255,255,.5);
+    border-radius: 0 0 4px 4px;
+    color: #0088ff;
+    cursor: pointer;
+
+}
+.topleft1 div+span:hover>i{
+    background: url("../img/yonghu2.png")no-repeat;
+}
+.topleft1 div+span i{
+    display: block;
+    background: url("../img/yonghu.png")no-repeat;
+   width: 20px;
+    height: 30px;
+    float: left;
+   margin: 20px 12px;
+    transition: all 0.5s linear;
+
+}
+
+.topright{
+    float: right;
+    color: white;
+}
+
+.topright h3{
+    float: left;
+    margin-right: 50px;
+
+}
+.topright div{
+    float: left;
+    width: 80px;
+    height: 60px;
+    line-height: 60px;margin-right: 50px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.topright div:hover{
+    float: left;
+    width: 80px;
+    height: 60px;
+    line-height: 60px;margin-right: 50px;
+    cursor: pointer;
+    background: rgba(255,255,255,.5);
+}
+.topright div:hover+span{
+    background: rgba(255,255,255,.5);
+    display: block;
+}
+.topright i{
+float: right;
+    width: 20px;
+    height: 60px;
+    background: url("../img/xiala.png")no-repeat;
+    margin: 20px 0px;
+    display: block;
+
+
+
+}
+.topright span{
+    position: absolute;
+    float: left;
+    width: 80px;
+    height: 60px;
+    top: 60px;
+    right: 50px;
+    color: #333;
+    text-align: center;
+    display: none;
+    transition: all 1s linear;
+    border-radius: 0 0 4px 4px;
+    box-shadow: rgba(0,0,0,0.1) 0px 0px 8px ; z-index: 100;
+
+}
+.topright span:hover{
+    position: absolute;
+    float: left;
+    width: 80px;
+    height: 60px;
+    top: 60px;
+    right: 50px;
+    color: #0088ff;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+}
+.topright span>a{
+    transition: all 0.5s linear;
+}
+.topright span>a:hover{
+
+    color: #0088ff;
+
+}
+input{
+    width: 300px;
+    height: 20px;
+    outline: none;
+    background: rgba(132,137,167,.6);
+    border: none;
+
+}
+.tijiao,.chongzhi{
+    width: 80px;
+    height: 20px;
+    color: white;
+    background: rgba(200,114,114,1);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#img1{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 0;
+}

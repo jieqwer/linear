@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>报名系统</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <link type="text/css" href="../style/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<script type="text/javascript">
+   function test(){
+    
+    document.getElementById('a').style.display='none';
+    document.getElementById('b').style.display='none';
+    document.getElementById('c').style.display='none';
+    var value=document.getElementById('select').value;
+    document.getElementById(value).style.display='block';
+   }
+  </script>
+<select id="select" onchange="test()">
+    <option value="a" selected>a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    </select>
+
+    <?php echo date('Y年m月d日 H:i:s'); ?>
+    
+    <div id="a" style="display:block">div1</div>
+    <div id="b" style="display:none">div2</div>
+    <div id="c" style="display:none">div3</div>
+ 
+</body>
+</html>

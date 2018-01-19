@@ -1,0 +1,312 @@
+body{
+    width: 1920px;
+    margin: 0px;
+}
+a{
+    text-decoration:none;
+
+}
+
+.tree{
+    width: 400px;
+    margin: 0;
+    margin-left: 2px;
+
+}
+.tree li{
+    line-height: 30px;
+    color:#333;
+    border-bottom: 1px solid #ccc;
+
+}
+.tree li ul li{
+    background:#e5e5e5;
+    width: 98%;
+    transition: all 0.3s linear;
+
+}
+.tree li ul {
+    width: 87%;
+    margin-left: 40px;
+
+}
+.tree li ul li:hover{
+    color: #148cf1;
+    background: rgba(255,255,255,0.5);
+
+}
+.tree li ul li a{
+    color:#333;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.tree li ul li a:hover{
+    color: #148cf1;
+
+}
+li{
+    list-style:none;
+    font-size: 20px;
+    width: 336px;
+    font-family: "微软雅黑";
+}
+li span{
+    cursor: pointer;
+    background: url("../img/jia.png") no-repeat center left;;
+    display: block;
+    height: 48px;
+    padding-left: 40px;
+    line-height: 48px;
+    transition: all 0.3s linear;
+}
+li span:hover{
+    color: #148cf1;
+
+
+
+}
+.r1{
+    display: block;
+    background: url("../img/guanli.png") no-repeat ;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 30px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+.r2{
+    display: block;
+    background: url("../img/tongji.png") no-repeat ;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 30px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+.r3{
+    display: block;
+    background: url("../img/rizhi.png") no-repeat ;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 30px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+.r4{
+    display: block;
+    background: url("../img/yonghu.png") no-repeat ;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 30px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+li ul{/*Step1: 定义起始样式,添加transition*/
+    height:0;
+    overflow:hidden;
+    transition:all .5s linear;
+    /*凡是添加了transition的元素，无论以任何途径修改样式时，都自带过渡效果！*/
+}
+.open{ background: url("../img/jian.png") no-repeat center left; }
+.open+ul{/*Step2: 定义目标样式,来回变化*/
+    height:60px;
+
+}
+.topbotleft{
+    height: 920px;
+    width: 340px;
+    border: 1px solid #ccc;
+    background:#e5e5e5;
+    border-right: 1px solid #0088ff;
+}
+.topbotright{
+    width: 400px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    text-align: center;
+    line-height:30px;
+    font-size: 50px;
+    animation: 20s move infinite;
+}
+.topbotright p{
+    height: 80px;
+}
+.righttable{
+    float:right;
+    width: 1550px;
+    height: 880px;
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+}
+.beijing{
+    position: absolute;
+    float:right;
+    width:1580px;
+    height: 837px;
+    top: 60px;
+    right: 0px;
+    background: url("../img/2.jpg")no-repeat;
+    background-size:cover;
+   opacity: 0.9;
+}
+.righttable2{
+    float:right;
+    width: 1550px;
+    height: 790px;
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+}
+.righttable4{
+    float:right;
+    width: 1550px;
+    height: 760px;
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+.righttable3{
+    float:right;
+    width: 1560px;
+    height: 790px;
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 16px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+}
+.righttable5{
+    float:right;
+    width: 1000px;
+    height: 790px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px;
+}
+.righttable6{
+    float:right;
+    width: 1000px;
+    height: 790px;
+    display: block;
+    position: absolute;
+    top: 68px;
+    right: 40px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+}
+.righttable7{
+    float:right;
+    width: 1550px;
+    height: 760px;
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+}
+td{
+    height: 50px;
+}
+
+@keyframes move {
+    10%{color: aqua;}
+    20%{color: black;}
+    30%{color: red;}
+    40%{color: moccasin;}
+    50%{color: green;}
+    60%{color: #ffc107;}
+    70%{color: #8bc34a}
+    80%{color: #673ab7}
+    90%{color: #9c27b0}
+    100%{color: #e91e63}
+
+}
+.footer{
+    width: 80%;
+    height: 150px;
+    position: absolute;
+    display: block;
+    margin-left: 350px;
+    bottom: 0;
+}
+.footer div{
+    width: 99%;
+    border-bottom: 1px dashed #959292;
+    margin: 25px auto;
+    height: 40px;}
+.footer  div span{
+    display: block;
+    width: 3%;
+    height:24px;
+    background: url("../img/8.png")no-repeat;
+    transform: rotate(90deg);
+    text-align: center;
+    margin: 0px auto;
+
+}
+.footer p{
+    width: 100%;
+    height: 20px;
+    color: #959292;
+    text-align: center;
+}
+
+#bing+label{
+    display: none;
+    height: 30px; width: 100%;
+    transition: all 10s linear;
+}
+#bing:checked+label {
+    display: block;
+    height: 30px;
+    width: 100%;
+}
+
+select{
+    width: 312px;
+    height: 22px;
+    background:#8489a799 ;
+}
+.fenye>a{
+    display: block;
+    width: 60px;
+    height: 24px;
+    font-size: 16px;
+    background: #3ed;
+    float:left;
+    margin: 10px 10px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}

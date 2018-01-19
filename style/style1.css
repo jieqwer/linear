@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+canvas{
+    margin-top:10px; ;
+}
+.top{
+    width: 100%;
+    min-height: 10%;
+    background: #08f;
+    text-align: center;
+}
+.top div{
+    font-size: 30px;
+    color: white;
+}
+.top a{
+    font-size: 16px;
+    color: white;
+}
+.center{
+    width:100%;
+    text-align: center;
+    height: 290px;
+    margin-top: 100px;
+}
+p{
+    margin-top: 10px;
+}
+input{
+    width: 20%;
+    height: 50px;
+    border: 1px solid #13ddf4;
+    border-radius: 10px;
+    outline: none;
+}
+input:focus{
+    border-radius: 10px;
+    border: 1px solid #3ed;
+    box-shadow: rgba(87,230,217,1) 0px 0px 20px ;
+}
+.center table tr{
+    width: 50%;
+    height: 120px;
+
+}
+h1{
+    font-size: 28px;
+}
+label{
+    font-size: 18px;
+    font-weight: 800;
+
+}
+.tab{
+    margin-top: 50px;
+    width: 100%;
+}
+
+span{
+    margin-left: 5px;
+    color: #959292;
+}
+.lab{
+    margin-left: 80px;
+}
+.sub{
+    margin-left: 10px;
+    background: #cccccc;
+    transition: all 0.5s linear;
+}
+.sub:hover{
+    margin-left: 10px;
+    background: #13ddf4;
+    color: white;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 140px;
+    background: #cccccc;
+    margin-top: 340px;
+}
+.footer div{
+    width: 70%;
+    border-bottom: 1px dashed #959292;
+    margin: 25px auto;
+    height: 40px;}
+.footer  div span{
+    display: block;
+    width: 1%;
+    height: 20px;
+    background: url("../img/1.png")no-repeat;
+    transform: rotate(90deg);
+    text-align: center;
+    margin: 0px auto;
+
+}
+.footer p{
+    width: 100%;
+    height: 20px;
+    color: #959292;
+    text-align: center;
+}
+
+@media(max-width:800px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    li{
+        list-style: none;
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    .top{
+        width: 100%;
+        min-height: 10%;
+        background: #08f;
+        text-align: center;
+    }
+    .top div{
+        font-size: 30px;
+        color: white;
+    }
+    .top a{
+        font-size: 16px;
+        color: white;
+    }
+    .center{
+        width:100%;
+        text-align: center;
+        height: 390px;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    input{
+        width: 80%;
+        height: 40px;
+        border: 1px solid #13ddf4;
+        border-radius: 10px;
+        outline: none;
+        font-size: 12px;
+    }
+    input:focus{
+        border-radius: 10px;
+        border: 1px solid #3ed;
+        box-shadow: rgba(87,230,217,1) 0px 0px 20px ;
+    }
+    .center table tr{
+        width: 40%;
+        height: 80px;
+
+    }
+    canvas{
+        margin-top:10px; ;
+    }
+    .lab{
+        margin-left: 0px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    label{
+        font-size: 12px;
+        font-weight: 800;
+    }
+    .tab{
+        margin-top:20px;
+    }
+    span{
+        color: #959292;
+        font-size: 10px;
+        display: none;
+    }
+    .sub{
+        margin-left: 0px;
+        background: #cccccc;
+        transition: all 0.5s linear;
+        width: 200px;
+    }
+    .sub:hover{
+        margin-left: 0px;
+        background: #13ddf4;
+        color: white;
+    }
+    .footer{
+        width: 100%;
+        height: 140px;
+        background: #cccccc;
+        margin-top: 0px;
+    }
+    .footer div{
+        width: 70%;
+        border-bottom: 1px dashed #959292;
+        margin: 25px auto;
+        height: 40px;}
+    .footer  div span{
+        display: block;
+        width: 5%;
+        height: 20px;
+        background: url("../img/1.png")no-repeat;
+        transform: rotate(90deg);
+        text-align: center;
+        margin: 0px auto;
+
+    }
+    .footer p{
+        width: 100%;
+        height: 20px;
+        color: #959292;
+        text-align: center;
+        font-size: 12px;
+    }
+
+}
