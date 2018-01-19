@@ -14,7 +14,7 @@ if($role==1){
 }else{
     $cid=$_GET['cid'];
     include_once('../function/function.php');
-    opensql('localhost','root',woainirr@1314.++','db_lzy');
+    opensql('localhost','root','woainirr@1314.++','db_lzy');
     $sql="delete from tb_message where me_number='$cid'";
     mysql_query($sql);
     $num=mysql_affected_rows();
