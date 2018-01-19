@@ -1,8 +1,8 @@
-<meta charset="UTF-8">
+﻿<meta charset="UTF-8">
 
 <?php
 $num_rec_per_page=10;   // 每页显示数量
-mysql_connect('localhost','root','123456');  // 数据库连接
+mysql_connect('localhost','root','woainirr@1314.++');  // 数据库连接
 mysql_select_db('db_fen');  // 数据库名
 mysql_query("set names 'utf8'");
     if (isset($_GET["page"])) {
