@@ -22,7 +22,7 @@ $postal=$_POST['postal'];//邮编
 $sname=$_POST['sname'];//收件人姓名
 $stel=$_POST['stel'];//收件人电话
 $no=$_GET['no'];//批次id
-$pass=$_POST["password2"];
+$pass=md5($_POST["password2"]);
 
 include_once('../function/function.php');
 //设置字符编码
