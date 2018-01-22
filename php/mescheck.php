@@ -2,7 +2,7 @@
 <?php
 
 $idcar=$_POST['idcar'];
-$password=$_POST['password'];
+$password=md5($_POST['password']);
 $uname=$_POST['uname'];
 $sex=$_POST['sex'];//性别
 $nation=$_POST['nation'];//名族
