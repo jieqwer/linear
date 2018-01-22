@@ -46,7 +46,7 @@ include_once("admin.php")
     echo "<th>缴费金额</th>";
     echo "<th>批次发布时间</th>";
     echo "<th>批次发布者（1管理/2超级管理）</th>";
-    echo "<th>是否禁用（1禁用/2不禁用）</th>";
+    echo "<th>是否禁用（1不禁用/2禁用）</th>";
     echo '<th colspan="2" width="200">操作</th>';
     echo "</tr>";
     //循环查询数据表中的单行的信息以数组的方式返回  mysql_fetch_row($result)：从结果集中取得一行作为数组
