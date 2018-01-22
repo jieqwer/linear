@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if(!(empty($_COOKIE['username']))){
     $username=$_COOKIE['username'];
 }else{

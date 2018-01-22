@@ -25,8 +25,8 @@ $id=$_GET['id'];
     <form action="mescheck.php?no=<?php echo $id; ?>" method="post">
         <table>
             <tr><td colspan="3"><label for="idcar">身份证号：*</label><input type="text" required="required"  name="idcar" pattern="^[1-9]\d{5}[1-9]\d{3}((0[1-9])|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$"  placeholder="请输入身份证号码"><span>登录报名平台的用户名为身份证号码</span></td></tr>
-            <tr><td colspan="3"><label for="password">登录密码：*</label><input type="text" required="required"  name="password" pattern="^[\da-zA-Z]{6,18}$"  placeholder="请输入密码"><span>数字或字母，至少6位</span></td></tr>
-            <tr><td colspan="3"><label for="password2">确认密码：*</label><input type="text" name="password2" placeholder="请再次输入密码" required="required" pattern="^[\da-zA-Z]{6,18}$" ><span>与密码相同</span></td></tr>
+            <tr><td colspan="3"><label for="password">登录密码：*</label><input type="password" required="required"  name="password" pattern="^[\da-zA-Z]{6,18}$"  placeholder="请输入密码"><span>数字或字母，至少6位</span></td></tr>
+            <tr><td colspan="3"><label for="password2">确认密码：*</label><input type="password" name="password2" placeholder="请再次输入密码" required="required" pattern="^[\da-zA-Z]{6,18}$" ><span>与密码相同</span></td></tr>
             <tr><td colspan="3"><label for="name">考生姓名：*</label><input type="text" required="required"  name="uname" pattern="^[/u4e00-/u9fa5]{0,}$" placeholder="请输入您的真实姓名"><span>注意：与身份证姓名一致</span></td></tr>
             <tr><td style="width:20px;"><label for="boy">性别：</label><input type="radio" name="sex" id="boy" value="男" >男<input type="radio" name="sex" id="girl" value="女">女</td>
                 <td><label for="nation">名族:</label>

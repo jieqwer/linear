@@ -1,4 +1,4 @@
-
+﻿
 <meta charset="utf-8">
 <?php
 date_default_timezone_set('prc');
